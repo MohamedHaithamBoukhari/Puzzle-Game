@@ -1,0 +1,123 @@
+:root {
+  --main-margin-top: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  height: 100vb;
+  background-color: #c1272d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img.puzzle {
+  z-index: -1;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding: 20px 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #006233;
+  margin-top: var(--main-margin-top);
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  text-shadow: 0 0 1px aqua;
+
+  /* text-shadow: 0 0 7px #c1272d; */
+  color: #c1272d;
+  font-size: xxx-large;
+}
+
+.cadres {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.container .cadre1,
+.container .cadre2 {
+  border: 1px solid #333;
+  width: 401px;
+  height: 400px;
+  justify-content: space-between;
+  align-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+
+.container .cadre1 .box,
+.container .cadre2 .box {
+  display: inline-block;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  width: 131px;
+  height: 131px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.container .cadre1 .box2,
+.container .cadre2 .box2 {
+  display: inline-block;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  width: 97px;
+  height: 97px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.container .cadre1 .box3,
+.container .cadre2 .box3 {
+  display: inline-block;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  width: 77px;
+  height: 77px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  margin-top: var(--main-margin-top);
+  /* background-color: #c1272d; */
+}
+
+button {
+  /* border: 1px solid black; */
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+button#reset {
+  background-color: aqua;
+  box-shadow: 0 0 7px aqua;
+  
+}
+
+button#validate {
+  box-shadow: 0 0 7px aqua;
+  background-color: #32cd32;
+}

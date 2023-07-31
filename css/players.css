@@ -1,0 +1,98 @@
+
+
+:root {
+  --main-margin-top: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  background-color: #c1272d;
+  width: 100%;
+  height: 100vb;
+  display: flex;    
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.gallery {
+  width: 155px;
+}
+
+.name {
+  background-color: #006233;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+} 
+
+.playerName {
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5px;
+  text-decoration: none;
+  transition: border 0.5s ease;
+}
+
+playerName:hover, .name:hover {
+  border: 1px solid #006233 ;
+} 
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  /* display: block; */
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.gallery:hover .image {
+  border: 1px solid #006233 ;
+  opacity: 0.3;
+}
+
+.gallery:hover .middle {
+  opacity: 1;
+}
+
+.level {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 20px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  text-decoration: none;
+}
